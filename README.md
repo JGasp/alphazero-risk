@@ -1,8 +1,6 @@
 # alphazero-risk
 AlphaZero implementatoin for board game Risk in C++
 
-# Getting started
-
 ## Building Tensorflow
 To build from sources follow [official guide](https://www.tensorflow.org/install).
 
@@ -29,8 +27,14 @@ Copy headers folder `~/tensorflow/bazel-bin/tensorflow/include` into project `~/
 ## Compile program
 Use cmake build script.
 
-# Using program
-For detailed options available examine file [settings.h](https://github.com/JGasp/alphazero-risk/blob/master/src/settings.h).
+## Using program
+For detailed options available examine file [settings.h](https://github.com/JGasp/alphazero-risk/blob/master/src/settings.h). Some options/macros are present in CMakeLists.txt that are related to version of input vector and changes/optimizations to Risk game implementation. In order to apply those changes you need to recompile project.
 
-# Changing NN
-In order to build graph we used python. Script is located in [~python/src/build_model.py](https://github.com/JGasp/alphazero-risk/blob/master/python/src/build_graph.py)
+Simple play command:  
+`AlphaZero_risk -m play --mcts=16 --cg=1000` Play 1000 games using 16 MCTS searches per move (default: AlphaZero vs ScriptPlayer)
+
+## Changing NN
+In order to build graph we used python. Script is located in [~python/src/build_model.py](https://github.com/JGasp/alphazero-risk/blob/master/python/src/build_graph.py). If you change graph it is recommended to rename it to something uniqe and update CMakeLists.txt file to copy correct graph into working directory.
+
+## Trained models
+On [release page](https://github.com/JGasp/alphazero-risk/releases/tag/1.0) we uploaded our pretrained models. In order to use them place them into `{CWD}/checkpoints/`
