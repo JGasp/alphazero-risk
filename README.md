@@ -38,3 +38,6 @@ In order to build graph we used python. Script is located in [~python/src/build_
 
 ## Trained models
 On [release page](https://github.com/JGasp/alphazero-risk/releases/tag/1.0) we uploaded our pretrained models. In order to use them place them into `{CWD}/checkpoints/`
+
+## Design choice
+In retrospective picking Tensorflow for usage in C++ program was bad choice due to lack of documentation. With this knowledge picking PyTorch would be preferable, because they have documented/supported C++ release. Additionaly it is not possible to run multiple independant Tensorflow sessions in single process, but we can run multiple graphs in single session. In order to utilize our multi-gpu setup we implemented simple tensorflow interface to simplify multi graph usage and prevent execution of multiple concurent sessions on single GPU.
