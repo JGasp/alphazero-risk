@@ -1,0 +1,12 @@
+.vs/
+out/
+*.lib
+*.dll
+include/
+python/.idea/
+python/model/model_txt.pb
+python/charts/
+data/
+enc_temp_folder/
+checkpoints/
+backup/
