@@ -1,5 +1,6 @@
 # alphazero-risk
-AlphaZero implementatoin for board game Risk in C++
+AlphaZero implementatoin for board game Risk in C++.
+Implementation is based on published [article](https://deepmind.com/research/publications/mastering-game-go-without-human-knowledge) and [paper](https://www.nature.com/articles/nature24270.epdf?author_access_token=VJXbVjaSHxFoctQQ4p2k4tRgN0jAjWel9jnR3ZoTv0PVW4gB86EEpGqTRDtpIz-2rmo8-KG06gqVobU5NSCFeHILHcVFUeMsbvwS-lxjqQGg98faovwjxeTUgZAUMnRQ) from DeepMind and open source implementation [alpha-zero-general](https://github.com/suragnair/alpha-zero-general). 
 
 ## Building Tensorflow
 To build from sources follow [official guide](https://www.tensorflow.org/install).
