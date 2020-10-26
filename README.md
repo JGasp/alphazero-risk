@@ -28,3 +28,9 @@ Copy headers folder `~/tensorflow/bazel-bin/tensorflow/include` into project `~/
 
 ## Compile program
 Use cmake build script.
+
+# Using program
+For detailed options available examine file [settings.h](https://github.com/JGasp/alphazero-risk/blob/master/src/settings.h).
+
+# Changing NN
+In order to build graph we used python. Script is located in [~python/src/build_model.py](https://github.com/JGasp/alphazero-risk/blob/master/python/src/build_graph.py)
