@@ -162,7 +162,7 @@ public:
 
 		if (result["gpu-games"].count() > 0)
 		{
-			NUMBER_OF_CONCURENT_GAMES_PER_GPU = result["gpu-games"].as<int>(); // Ovveride;		
+			NUMBER_OF_CONCURENT_GAMES_PER_GPU = result["gpu-games"].as<int>(); // Override;		
 		}
 		else
 		{
